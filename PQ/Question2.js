@@ -1,0 +1,1 @@
+/**Store your friend’s marks and check if they are greater than 50. */
