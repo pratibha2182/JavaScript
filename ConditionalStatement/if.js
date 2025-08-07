@@ -3,7 +3,9 @@
  */
 
  //example
+ /*
  let age = 18
  if (age >= 19){
     console.log("You can vote.")
  }
+*/
