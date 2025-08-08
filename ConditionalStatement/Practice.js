@@ -122,23 +122,93 @@ if (num1 > num2){
 */
 
 //Q11 Temperature Advisor
+/*
+const prompt = require("prompt-sync")()
+let temp = prompt ("Enter a temperature in which you are:")
+if (temp < 0){
+    console.log("It's freezing! Wear a heavy coat, gloves, and a scarf.");
+} else if (temp >= 0 && temp <= 14){
+    console.log("It's cold outside. Wear a jacket.");
+} else if (temp >= 15 && temp <= 24){
+    console.log("The weather is nice. Light clothing should be fine.");
+} else if (temp >= 25 && temp <= 34){
+    console.log("It's warm! Stay hydrated.");
+} else {
+    console.log("It's very hot! Avoid going out in the sun and drink plenty of water.");
+}
+*/
+
 //Q12 Triangle Type Checker
+/*
+const prompt = require("prompt-sync")()
+let side1 = Number(prompt ("Enter side  1 :"))
+let side2 = Number(prompt ("Enter side 2 :"))
+let side3 = Number(prompt ("Enter side 3 :"))
+// for checking if it is a triangle 1 2 > 3, 2 3 > 1, 1 3 > 2 if it is a triangle
+if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1){
+    console.log("It is the Tringle but");
+    if (side1 === side2 && side2 === side3) {
+        console.log("Equilateral Traingle")
+        console.log("All sides are equal.");
+        
+    } else if (side1 === side2 || side2 === side3 || side1 === side3){
+        console.log("Isosceles Triangle");
+        console.log("Any 2 side are same.");
+        
+    } else{
+        console.log("Scalene Triangle");
+        console.log("All sides are different");
+    }
+} else {
+    console.log("It is not a triangle"); 
+}
+*/
+
 //Q13 Grade & Scholarship
+/*
+const prompt = require ("prompt-sync")();
+let marks = Number(prompt("Enter your marks:"))
+if (marks < 0 || marks > 100){
+    console.log("Invalid marks");
+} else if (marks >= 90){
+    console.log("You get A Grade with scholarship of 100%");
+} else if (marks >=80){
+    console.log("You get B Grade with scholarship of 50%");
+} else if (marks >= 70){
+    console.log("You get C Grade with scholarship of 25%");
+} else if (marks >= 60){
+    console.log("You get D Grade with no scholarship");
+} else {
+    console.log("You are fail please regive the examination");
+}
+*/
+
 //Q14 Number Guessing
+/*
 const prompt = require ("prompt-sync")();
 const num = 7
 let enterNumber;
 let attempt = 0;
 while (true) {
-    enterNumber = prompt ("Guess number:")
-    attempt ++;
-    if (enterNumber == num) {
+    enterNumber = parseInt(prompt ("Guess number:")) //here we have to convert string to integer if we usee === insted of ==
+    attempt ++; // will count attempts
+    if (enterNumber === num) {
         console.log(`Correct! you guessed in ${attempt} attempts`);
         break;
-    } else if (enterNumber < num) {
-        console.log("Guess little high.");
     } else {
-        console.log("Guess little low.");   
+        console.log("Wrong Guess try again.");   
     }
 }
+*/
+
 //Q15 Multiple Conditions
+/*
+let age = 20;
+let hasPass = true;
+
+if (age >= 18 || hasPass) {
+    console.log("You are allowed to enter.");
+} else {
+    console.log("Entry denied.");
+}
+*/
